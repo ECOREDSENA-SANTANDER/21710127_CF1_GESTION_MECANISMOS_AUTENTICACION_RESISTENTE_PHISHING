@@ -33,18 +33,6 @@ const router = createRouter({
           component: () =>
             import(/* webpackChunkName: "tema1" */ '../views/Tema1.vue'),
         },
-        {
-          path: 'tema2',
-          name: 'tema2',
-          component: () =>
-            import(/* webpackChunkName: "tema2" */ '../views/Tema2.vue'),
-        },
-        {
-          path: 'tema3',
-          name: 'tema3',
-          component: () =>
-            import(/* webpackChunkName: "tema3" */ '../views/Tema3.vue'),
-        },
       ],
     },
     {
