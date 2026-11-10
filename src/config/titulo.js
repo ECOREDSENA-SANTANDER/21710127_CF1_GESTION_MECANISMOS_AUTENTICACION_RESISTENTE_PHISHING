@@ -1,1 +1,1 @@
-module.exports = 'Ecored Base PKG'
+module.exports = 'Mecanismos y riesgos de autenticación en servicios digitales'
