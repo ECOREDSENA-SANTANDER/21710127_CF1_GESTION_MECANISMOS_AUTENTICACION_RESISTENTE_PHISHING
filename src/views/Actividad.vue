@@ -4,9 +4,9 @@
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
       // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
-      #Actividad                
+      #Actividad
       <ActividadController :cuestionario="cuestionario"/>
-  
+
   </template>
 
 <script>
@@ -19,10 +19,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Mecanismos y riesgos de autenticación en servicios digitales',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> verificar la comprensión de los conceptos de identidad y acceso digital, las amenazas a la autenticación, la autenticación multifactor, la resistencia al <em>phishing</em>, los niveles de aseguramiento y los criterios para seleccionar mecanismos de autenticación seguros.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
@@ -30,405 +30,627 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué diferencia existe entre identificación y autenticación en un servicio digital?',
+          imagen: '@/assets/actividad/imagen1.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'La identificación asigna permisos y la autenticación crea la cuenta.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+              texto: 'La identificación declara una identidad y la autenticación comprueba el control de los autenticadores asociados.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: 'La identificación establece la sesión y la autenticación elimina los permisos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto: 'La identificación y la autenticación corresponden exactamente al mismo proceso.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué función cumple la autorización después de una autenticación exitosa?',
+          imagen: '@/assets/actividad/imagen2.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Crear automáticamente una nueva identidad digital.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Auto</em>',
+              texto: 'Generar una contraseña diferente para cada acceso.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Text</em>',
+              texto: 'Determinar los recursos, funciones y operaciones permitidas al usuario autenticado.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Verificar exclusivamente la identidad civil de la persona.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto:
+            '¿Qué propósito cumple una sesión después de la autenticación?',
+          imagen: '@/assets/actividad/imagen3.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
-              esCorrecta: false,
+              texto: 'Mantener el estado de autenticación del usuario para permitir el acceso a los recursos y servicios autorizados sin solicitar una nueva autenticación en cada interacción.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Sustituir permanentemente todos los autenticadores del usuario.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
+              texto: 'Eliminar los permisos asociados con la cuenta.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
+              texto: 'Convertir una contraseña en un factor biométrico.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué aspectos deben analizarse al reconocer los requisitos de autenticación de un servicio digital?',
+          imagen: '@/assets/actividad/imagen4.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Únicamente el diseño gráfico y el nombre del servicio.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
+              texto: 'Solo la cantidad de contraseñas utilizadas por los usuarios.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Board</em>',
-              esCorrecta: true,
+              texto: 'Exclusivamente el fabricante de los dispositivos.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
+              texto: 'Usuarios, recursos protegidos, operaciones, entorno tecnológico, impacto y nivel de protección.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto:
+            '¿Qué función cumple la parte confiable o <em>relying party</em> en un proceso de autenticación?',
+          imagen: '@/assets/actividad/imagen5.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+              texto: 'Generar todas las contraseñas de los usuarios.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Confiar en el resultado de la autenticación para permitir una transacción o conceder acceso.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto: 'Reemplazar físicamente el dispositivo del usuario.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Enviar automáticamente códigos OTP a cualquier sitio web.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué caracteriza principalmente un ataque de <em>phishing</em> contra un proceso de autenticación?',
+          imagen: '@/assets/actividad/imagen6.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
+              texto: 'Engañar al usuario para que entregue credenciales o interactúe con un servicio que aparenta ser legítimo.',
               esCorrecta: true,
             },
             {
+              id: 'b',
+              texto: 'Incrementar automáticamente la longitud de las contraseñas.',
+              esCorrecta: false,
+            },
+            {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+              texto: 'Actualizar los certificados digitales del servicio.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+              texto: 'Crear copias de seguridad de las credenciales del usuario.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿En qué consiste el <em>credential stuffing</em>?',
+          imagen: '@/assets/actividad/imagen7.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto: 'En generar claves criptográficas nuevas para cada servicio.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
-              esCorrecta: true,
+              texto: 'En solicitar al usuario que cambie periódicamente su contraseña.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
-              esCorrecta: false,
+              texto: 'En probar automáticamente credenciales obtenidas previamente para acceder a otros servicios.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
+              texto: 'En bloquear una cuenta después de una autenticación exitosa.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué caracteriza un ataque de retransmisión durante la autenticación?',
+          imagen: '@/assets/actividad/imagen8.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'El atacante cambia permanentemente el identificador del usuario.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'El sistema reutiliza automáticamente una contraseña antigua.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'El usuario crea varias cuentas en un mismo servicio.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
+              texto: 'El atacante captura una prueba válida y la transmite en tiempo real al servicio legítimo.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué situación caracteriza la fatiga de autenticación?',
+          imagen: '@/assets/actividad/imagen9.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'El usuario utiliza una contraseña excesivamente larga.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'El usuario recibe solicitudes repetidas de aprobación y termina aceptando una por confusión o cansancio.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'El sistema elimina automáticamente los factores de autenticación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El autenticador cambia su clave pública después de cada acceso.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Cuándo se considera que un proceso utiliza autenticación multifactor?',
+          imagen: '@/assets/actividad/imagen10.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Cuando solicita dos contraseñas distintas.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Cuando utiliza dos datos que el usuario debe memorizar.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Cuando combina factores pertenecientes a categorías diferentes, como conocimiento y posesión.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Cuando utiliza la misma contraseña en dos aplicaciones.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Por qué un código OTP introducido manualmente no se considera por sí mismo resistente al <em>phishing</em>?',
+          imagen: '@/assets/actividad/imagen1.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
+              texto: 'Porque puede entregarse a un sitio fraudulento y retransmitirse mientras permanece vigente.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
+              texto: 'Porque nunca cambia después de ser generado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Porque únicamente funciona como factor biométrico.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Porque no puede utilizarse junto con una contraseña.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué caracteriza a los mecanismos de autenticación fuera de banda?',
+          imagen: '@/assets/actividad/imagen2.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Utilizan únicamente una contraseña almacenada en el navegador.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Eliminan completamente el riesgo de <em>phishing</em>.',
               esCorrecta: false,
             },
+            {
+              id: 'c',
+              texto: 'Solo pueden funcionar mediante dispositivos criptográficos externos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Utilizan un canal o dispositivo adicional para completar la autenticación.',
+              esCorrecta: true,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 13,
           texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Cómo funciona un autenticador criptográfico basado en clave pública?',
+          imagen: '@/assets/actividad/imagen3.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Envía permanentemente la clave privada al servicio para comprobarla.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Protege una clave privada y genera respuestas criptográficas que el servicio verifica mediante información pública.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Utiliza únicamente preguntas personales como mecanismo de seguridad.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Comparte una misma contraseña entre todos los servicios digitales.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Qué caracteriza principalmente a una <em>passkey</em>?',
+          imagen: '@/assets/actividad/imagen4.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Es una contraseña de texto que debe reutilizarse en varios servicios.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Es un código OTP enviado exclusivamente mediante SMS.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Es una credencial FIDO basada en criptografía de clave pública que puede proporcionar autenticación resistente al <em>phishing</em>.',
               esCorrecta: true,
             },
+            {
+              id: 'd',
+              texto: 'Es una pregunta secreta utilizada para recuperar una cuenta.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Qué significa la vinculación al nombre del verificador?',
+          imagen: '@/assets/actividad/imagen5.jpg',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Que la prueba de autenticación queda criptográficamente relacionada con el identificador del servicio legítimo.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Que todos los servicios utilizan una misma credencial.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Que el usuario debe memorizar el nombre completo del servidor.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Que una contraseña puede utilizarse libremente en cualquier dominio.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Qué expresa la intención de autenticación?',
+          imagen: '@/assets/actividad/imagen6.jpg',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Que el servidor decide automáticamente por el usuario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Que una sesión permanece abierta indefinidamente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Que el usuario puede compartir libremente su credencial.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Que el usuario participa conscientemente mediante una acción explícita en la solicitud de autenticación.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿En qué tipo de escenario puede resultar apropiado el nivel de aseguramiento AAL1?',
+          imagen: '@/assets/actividad/imagen7.jpg',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'En accesos críticos que exigen obligatoriamente una clave privada no exportable.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'En servicios donde las consecuencias de una autenticación fraudulenta son limitadas y fácilmente reversibles.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Exclusivamente en sistemas que utilizan autenticadores de <em>hardware</em>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Únicamente en sistemas administrativos de privilegios elevados.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Qué característica corresponde al nivel de aseguramiento AAL2?',
+          imagen: '@/assets/actividad/imagen8.jpg',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'No requiere ningún mecanismo de autenticación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Exige siempre una clave privada no exportable.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Requiere dos factores distintos o un autenticador multifactor adecuado y debe ofrecer una opción resistente al <em>phishing</em>.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Solo puede implementarse mediante contraseñas de un único factor.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
+        },
+        {
+          id: 19,
+          texto:
+            '¿Qué característica distingue especialmente al nivel AAL3?',
+          imagen: '@/assets/actividad/imagen9.jpg',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Exige autenticación basada en criptografía de clave pública con una clave privada no exportable y resistencia al <em>phishing</em>.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Permite utilizar únicamente una contraseña simple.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Elimina la necesidad de evaluar el impacto del servicio.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Requiere que todas las credenciales se sincronicen entre dispositivos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
+        },
+        {
+          id: 20,
+          texto:
+            '¿Qué criterios deben considerarse al seleccionar y documentar un mecanismo de autenticación?',
+          imagen: '@/assets/actividad/imagen10.jpg',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Únicamente el nombre comercial del mecanismo y su apariencia.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Solo la cantidad de usuarios registrados en el servicio.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Exclusivamente el dispositivo utilizado por el administrador.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Riesgos, impacto, AAL, resistencia al <em>phishing</em>, compatibilidad, recuperación y arquitectura del mecanismo.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: 'Se evidencia un adecuado dominio de los conceptos relacionados con Mecanismos y riesgos de autenticación en servicios digitales.',
+          mensaje_incorrecto: 'Se recomienda revisar nuevamente los contenidos del componente formativo Mecanismos y riesgos de autenticación en servicios digitales.',
         },
       ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_aprobado: 'Ha superado la actividad y demuestra sólidos conocimientos sobre Mecanismos y riesgos de autenticación en servicios digitales.',
       mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
+        'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
     parrafo: {
       tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',

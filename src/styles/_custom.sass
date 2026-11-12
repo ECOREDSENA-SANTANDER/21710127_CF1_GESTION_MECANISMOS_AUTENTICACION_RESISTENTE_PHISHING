@@ -12,12 +12,9 @@
     top: 30%
     right: 10%
     width: 20%
-
-
 @keyframes float1
   0%
     transform: translateY(20px)
-
   100%
     transform: translateY(0px)
 
@@ -25,34 +22,94 @@
   flex: 0 0 auto !important
   width: 58.33333333% !important
 .banner-principal__img 
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 .banner-principal__row .banner-principal__img 
-    width: 33%;
+  width: 30%
     
-.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $color-sistema-texto !important  
 
-.boton *, .boton--sm *,
-.barra-avance__boton--regresar span
-  color: $white !important
-.banner-interno__titulo h1, .banner-interno__titulo h2, 
-.banner-interno__titulo h3, .banner-interno__titulo h4, 
-.banner-interno__titulo h5, .banner-interno__titulo h6
-  color: $color-sistema-texto !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
   color: $white !important
 figcaption 
-    font-weight: normal !important
+  font-weight: normal !important
 
-.banner-interno__titulo__icono i
-    color: $color-acento-botones !important;
+
+.banner-interno__fondo
+  background-image: url(../assets/curso/temas/bg/miniportada.png) !important
+  background-size: cover
 
 
 /**************************************************************/
 /***CUSTOM STYLES***/
 /**************************************************************/
+.accesibilidad
+ z-index: 999
+
+.fa-lista
+  li
+    display: flex !important
+    align-items: flex-start
+  li:before
+    position: relative
+    margin-right: 7px
+    font-size: 1.4rem 
+.lista-ul--color.color-primario li > i:first-of-type  
+  color: $color-primario
+.lista-ul--color.color-secundario li > i:first-of-type  
+  color: $color-secundario     
+.lista-ul--color.color-adicional-1 li > i:first-of-type  
+  color: $color-adicional-1  
+.lista-ul--color.color-adicional-2 li > i:first-of-type  
+  color: $color-adicional-2  
+.lista-ol--cuadro.color-primario .lista-ol--cuadro__vineta
+  background-color: $color-primario
+.bg-color-acento-botones
+  background-color: $color-acento-botones
+.bg-color-acento-contenido
+  background-color: $color-acento-contenido
+.bg-color-primario
+  background-color: $color-primario
+.bg-color-secundario
+  background-color: $color-secundario
+.bg-color-sistema-texto
+  background-color: $color-sistema-texto
+.text-color-sistema
+  color: $color-sistema-texto !important
+.bg-color-adicional-1
+  background-color: $color-adicional-1
+.ct-color-primario
+  color: $color-primario
+.ct-color-acento-botones
+  color: $color-acento-botones
+.ct-secundario 
+  color: $color-secundario !important
+.ct-acento-contenido 
+  color: $color-acento-contenido !important
+.w-fit
+  width: fit-content
+.columns-2
+  columns: 2
+.font-italic
+  font-style: italic !important
+.sin-borde
+  border: 0px !important
+.br-top
+  border-top-left-radius: 20px 
+  border-top-right-radius: 20px 
+.br-left
+  border-top-left-radius: 20px 
+  border-bottom-left-radius: 20px 
+.br-right
+  border-top-right-radius: 20px 
+  border-bottom-right-radius: 20px 
+.tabs-a__tab__text 
+  white-space: normal
+.l-circle i.fa-circle
+  font-size: 6px
+  top: 10px !important
+
+
 .p-full-width
-  padding: 3rem 3.5rem!important;
+  padding: 3rem 3.5rem!important
 .bg-full-width
   background-size: cover
   background-repeat: no-repeat
@@ -60,7 +117,9 @@ figcaption
   margin-inline: -3.3rem
 .bg-fondo
   &-1
-    //background-image: url(../assets/curso/bg/3.svg)
+    background-image: url(../assets/curso/temas/bg/bg.png)
+    background-repeat: no-repeat
+    background-position: top right
 .bg-color
   &-1
     background-color: $color-primario
@@ -71,7 +130,7 @@ figcaption
   &-4
     background-color: #D6F1FE 
   &-5
-    background-color: #F4EAF2 
+    background-color: #F4EAF2 !important
   &-6
     background-color: #FDE1C0 
   &-7
@@ -80,29 +139,97 @@ figcaption
     background-color: #490DDC 
   &-9
     background-color: #0E0246 
+  &-10
+    background-color: #8F3484
+.bgdegr
+  background: linear-gradient(135deg, #D2ADCE 0%, #561F4F 100%)
+.bgcompl
+  &-1
+    background: #CFCCDD
+    margin-inline: -3.4rem
+    @media screen and (max-width: 992px)
+      margin-inline: -3rem  
+    @media screen and (max-width: 767px)
+      margin-inline: -1.4rem 
 
+
+.w-85x
+  width: 85px  
 .subt
   display: flex
   align-items: center
   position: relative  
   width: fit-content  
   img
-    width: 65px
+    width: 45px
     z-index: 1
+    @media (max-width: $bp-max-sm)
+      display: none
   h3 
     z-index: 1
+    background-color: $white
+    padding: 0px 15px 0px 5px
+    @media (max-width: $bp-max-sm)
+      padding: 5px 10px
   &::before
     content: ''
     position: absolute
     background-color: #490DDC 
-    border-radius: 100px
     width: 100%
-    height: 65%
+    height: 100%
     z-index: 0
+    @media (max-width: $bp-max-sm)
+      height: 130%
+.br-bloque
+  border-top-right-radius: 60px
+  border-bottom-left-radius: 60px
+.br-bloque2
+  border-top-left-radius: 60px
+  border-bottom-right-radius: 60px
+.tabla-a.t1
+  table
+    thead 
+      border-color: #490DDC
+      background-color: #120358
+      color: $white
+      tr th
+        text-align: left
+  &--1  
+    table tbody td
+        border: 1px solid #000000
 
 
-
-
+.acordion
+  &__activo
+    background-color: #FDE1C0
+    .acordion__titulo h3
+      color: $color-sistema-texto
+  &__accion__btn--a 
+    background-color: $color-acento-botones
+  &__titulo h3
+    color: $white
+.tarjeta-audio__texto
+  color: $color-sistema-texto !important
+  font-style: normal !important 
+.tarjeta--boton
+  cursor: inherit
+  &.bg-color-4:hover
+    background-color: #C3C0E9
+  &.bg-color-6:hover
+    background-color: #C3C0E9
+.slyder-a
+  &__tipo-b .slyder-a__btn--atrs, .slyder-a__btn--sigt
+    background-color: $color-acento-botones
+    border-color: $color-acento-botones
+    opacity: 0.9
+  &__bullets__item
+    background-color: $white
+    border-color: $white
+    &--active
+      background-color: $color-acento-botones
+      border-color: $color-acento-botones
+.slyder-f__btn i
+  color: $color-acento-botones
 
 
 
@@ -122,7 +249,6 @@ figcaption
   .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
     width: 90% !important
 
-  
  
   
 //// TABLET MINI 768--------------------------------------

@@ -1,11 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="472.826" height="402.865" viewBox="0 0 472.826 402.865">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="416" height="318" viewBox="0 0 416 318">
   <defs>
     <clipPath id="clip-path">
+      <rect id="Rectángulo_457373" data-name="Rectángulo 457373" width="416" height="318" transform="translate(-8688 -8502)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
       <circle id="SVGID" cx="134.5" cy="134.5" r="134.5" fill="#31155b"/>
     </clipPath>
   </defs>
-  <g id="Grupo_1210264" data-name="Grupo 1210264" transform="translate(-470.044 -4025.037)">
-    <g id="Grupo_1210263" data-name="Grupo 1210263">
+  <g id="Enmascarar_grupo_1206331" data-name="Enmascarar grupo 1206331" transform="translate(8688 8502)" clip-path="url(#clip-path)">
+    <g id="Grupo_1210256" data-name="Grupo 1210256" transform="translate(-9186.082 -12558.345)">
       <g id="Grupo_1209906" data-name="Grupo 1209906" transform="translate(0 115)">
         <g id="Grupo_1209584" data-name="Grupo 1209584" transform="translate(0.371 1731.506)">
           <rect id="Rectángulo_402012" data-name="Rectángulo 402012" width="416" height="318.232" transform="translate(498 2209.92)" fill="#ade3fc"/>
@@ -13,7 +16,7 @@
         <g id="Grupo_1209905" data-name="Grupo 1209905" transform="translate(510.711 3908)">
           <g id="Grupo_1209753" data-name="Grupo 1209753" transform="translate(61 51)">
             <circle id="SVGID-2" data-name="SVGID" cx="134.5" cy="134.5" r="134.5" fill="#31155b"/>
-            <g id="Grupo_1209752" data-name="Grupo 1209752" clip-path="url(#clip-path)">
+            <g id="Grupo_1209752" data-name="Grupo 1209752" clip-path="url(#clip-path-2)">
               <circle id="Elipse_13645" data-name="Elipse 13645" cx="134.5" cy="134.5" r="134.5" fill="#3b245b"/>
               <g id="Grupo_1209734" data-name="Grupo 1209734" transform="translate(184.652 14.259)">
                 <rect id="Rectángulo_457003" data-name="Rectángulo 457003" width="48" height="8" transform="translate(34.348 29.741)" fill="#31155b"/>
